@@ -5,7 +5,7 @@ import glob as glob
 import pandas as pd
 from datetime import datetime
 
-project_dir = "/Users/kelly89/Projects/ServerStatus/"
+project_dir = ""
 ofile = project_dir + datetime.strftime(datetime.now(),"%Y%m%d-%H%M%S") + ".png"
 
 all_data = pd.concat([pd.read_csv(f) for f in glob.glob(project_dir + "logfiles/*.csv")], axis = 0)

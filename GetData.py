@@ -4,6 +4,7 @@ import os
 
 epoch = datetime.utcfromtimestamp(0)
 project_dir = "/Users/kelly89/Projects/ServerStatus/"
+project_dir = ""
 server_list = project_dir + "MachineList.txt"
 t = datetime.now()
 ofile = project_dir + "logfiles/" + datetime.strftime(t,"%Y%m%d-%H%M%S") + ".csv"
